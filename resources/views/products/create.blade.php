@@ -5,10 +5,10 @@
     <input type="text" name="name" />
     <br />
     {{-- TASK: show the validation error for the specific "name" field --}}
-    {{-- using one Blade directive: pseudo-code below --}}
-    {{-- @directive --}}
-    {{-- {{ $message }} --}}
-    {{-- @endDirective --}}
+    {{-- using one Blade directive --}}
+    @error('name')
+    {{ $message }}
     <br /><br />
+    @enderror
     <button type="submit">Save</button>
 </form>
